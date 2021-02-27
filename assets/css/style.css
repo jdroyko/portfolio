@@ -6,14 +6,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 body {
-    background-color: #ffffff;
+    background-color: #333;
 }
 
 a {
-  color: #ffffff;
+  color: #333;
   background-color: rgb(110, 104, 104);
   padding: 1em;
   text-decoration: none;
@@ -22,8 +20,7 @@ a {
 
 p{
   padding-top: 3em;
-  display: flex;
-  flex-wrap: wrap;
+  width: 90%;
 }
 
 /* header with fixed position*/
@@ -36,12 +33,6 @@ header {
     width: 100%;
     display: flex;
     flex: content;
-    cursor:crosshair;
-  
-}
-
-.logo{
-  cursor: crosshair;
 }
 
 header h1 {
@@ -55,6 +46,8 @@ h2{
     border-radius: 4px;
     width:100%;
    }
+
+ 
 
 /* Navigation part*/
 header > nav {
@@ -70,27 +63,25 @@ header nav ul li {
 
  
 }
-        /* Drop down menu*/
+   /* Drop down menu*/
 
-        /* Dropdown Button */
-        .dropbtn {
-          background-color: #ffffff;
-          color: black;
-          padding: 16px;
-          font-size: 16px;
-          border-style: double;
-          margin-top: 5.5em;
-          margin-left: 15em;
-          border-radius: 6px;
-          
-        }
+    /* Dropdown Button */
+    .dropbtn {
+     background-color: #ffffff;
+     color: black;
+     padding: 16px;
+     font-size: 16px;
+     border-style: double;
+     margin-top: 5.5em;
+     margin-left: 15em;
+     border-radius: 6px;
+     }
 
-        /* the drop down menu code is derived from W3 Schools*/
-        .dropdown {
-          position: relative;
-          display: inline;
-        
-        }
+     /* the drop down menu code is derived from W3 Schools*/
+     .dropdown {
+     position: relative;
+     display: inline;
+     }
 
         /* Dropdown Content (Hidden by Default) */
         .dropdown-content {
@@ -121,9 +112,6 @@ header nav ul li {
         /* Change the background color of the dropdown button when the dropdown content is shown */
         .dropdown:hover .dropbtn {background-color: #333;}
           
-
-
-
         /*end drop down menu code*/
 
 
@@ -139,18 +127,19 @@ header nav ul li {
 .about-me{
     margin-bottom: 25px;
     display: inline-block;
-    }
-/* HOW DO I WRAP THE TEXT TO THE IMAGE?*/
+}
+.float-left{
+float:left;
+margin: 10em;
+}
+    
+/* HOW DO I WRAP THE TEXT TO THE IMAGE? Inline-block isn't working? Why*/
 
 
 .work {
     display: inline-block;
-  }
+    }
   
-  .column {
-    display:inline-block;
-    
-    float: left;
   }
   .row {
     display: flex;
@@ -161,12 +150,13 @@ header nav ul li {
     
   }
 
-
+/*per the directions when hovered on the image should enlarge...IT ISN'T WORKING IT'S STILL GOING BACK TO NONE*/
 .work img:hover{
-    display:none;
-}
+  transform: scale(1.5);
+   ;
 
-project { /*Captions below the under construction*/
+}
+.work > project { /*Captions below the under construction*/
   color: black;
   margin-left: 33.3%;
   background-color: rgb(255, 208, 0);
@@ -183,10 +173,11 @@ project { /*Captions below the under construction*/
 /* Contact information fill in boxes */
 .contact{
   padding: 5em;
-    display:flexbox;
+  display: flex;
     flex: auto;
     width: 33.3%;
     margin-left: 33.3%;
+    cursor: crosshair;
 }
 
 input[type=text], select, textarea {
@@ -207,7 +198,7 @@ input[type=text], select, textarea {
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+   
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
@@ -242,7 +233,7 @@ footer h2 {
       max-width: 50%;
     }
   
-    @media screen and (max-width: 500px) { /*responsive nav bar*/
+    @media screen and (min-width: 500px) { /*responsive nav bar...that's not really working*/
       .nav a {
         float: none;
         display: block;

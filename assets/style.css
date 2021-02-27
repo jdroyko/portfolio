@@ -8,7 +8,6 @@
 
 body {
     background-color: #333;
-   }
 }
 
 a {
@@ -22,9 +21,6 @@ a {
 p{
   padding-top: 3em;
   width: 90%;
-  display: inline-block;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 /* header with fixed position*/
@@ -50,6 +46,8 @@ h2{
     border-radius: 4px;
     width:100%;
    }
+
+ 
 
 /* Navigation part*/
 header > nav {
@@ -114,9 +112,6 @@ header nav ul li {
         /* Change the background color of the dropdown button when the dropdown content is shown */
         .dropdown:hover .dropbtn {background-color: #333;}
           
-
-
-
         /*end drop down menu code*/
 
 
@@ -133,12 +128,12 @@ header nav ul li {
     margin-bottom: 25px;
     display: inline-block;
 }
-
-.about-me img{
-  display: inline-block;
+.float-left{
+float:left;
+margin: 10em;
 }
-    }
-/* HOW DO I WRAP THE TEXT TO THE IMAGE?*/
+    
+/* HOW DO I WRAP THE TEXT TO THE IMAGE? Inline-block isn't working? Why*/
 
 
 .work {
@@ -155,9 +150,9 @@ header nav ul li {
     
   }
 
-
+/*per the directions when hovered on the image should enlarge...IT ISN'T WORKING IT'S STILL GOING BACK TO NONE*/
 .work img:hover{
-    display:none;
+  transform: scale(1.5);
    ;
 
 }
