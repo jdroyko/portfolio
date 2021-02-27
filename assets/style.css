@@ -10,13 +10,13 @@ body {
     background-color: #333;
 }
 
-a {
+/* a {
   color: #333;
   background-color: rgb(110, 104, 104);
   padding: 1em;
   text-decoration: none;
   text-transform: uppercase;
-}
+}*/
 
 p{
   padding-top: 3em;
@@ -46,7 +46,6 @@ h2{
     border-radius: 4px;
     width:100%;
    }
-
  
 
 /* Navigation part*/
@@ -56,13 +55,7 @@ header > nav {
     display: inline-flexbox;
     font-size: 20px; 
     }
-
-header nav ul li {
-  display: inline-block;
-  margin-left: 20px;
-
  
-}
    /* Drop down menu*/
 
     /* Dropdown Button */
@@ -133,7 +126,7 @@ max-width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   
+
 
 }
 .float-left{
@@ -141,20 +134,25 @@ float:left;
 margin: 10em;
 }
     
-/* This section is for Work. Work is currently under consturction images because there isn't anything to put there yet. It will be filled with projects as the class goes by. */
+/* This section is for Work. Work is currently under consturction images because there isn't anything to put there yet. It will be filled with projects as the class goes by. HOW DO I GET THEM TO BE SIDE BY SIDE*/
 .work {
     display: inline-block;
     }
   
-  }
-  .row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 33.33%;
-    
-  }
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+     
 
 /*per the directions when hovered on the image should enlarge.*/
 .work img:hover{
@@ -162,22 +160,8 @@ margin: 10em;
    ;
 
 }
-/* .work > project { /*Captions below the under construction
-  color: black;
-  margin-left: 33.3%;
-  background-color: rgb(255, 208, 0);
-  font-family: sans-serif;
-  font-weight: bold;
-  padding: 1em;
-  text-align: center;
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  */
-}
 
-/* Contact information fill in boxes */
+/* Contact information fill in form to send contact information 
 .contact{
   padding: 5em;
   display: flex;
@@ -191,7 +175,7 @@ input[type=text], select, textarea {
     width: 100%; 
     padding: 12px; 
     border: 1px solid #ccc; 
-    border-radius: 4px; /* Rounded borders */
+    border-radius: 4px; /* Rounded borders 
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
@@ -208,17 +192,18 @@ input[type=text], select, textarea {
    
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
+  When moving the mouse over the submit button, add a darker green color 
   input[type=submit]:hover {
     background-color: rgb(107, 105, 105);
   }
-  
-  
-  .container {
-    border-radius: 5px;
-    background-color: black;
-    padding: 20px;
-  }
+  */
+
+.contact ul{
+  font-size: 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: bolder;
+}
 
 footer {
     padding: 30px;

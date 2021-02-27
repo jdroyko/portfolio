@@ -8,14 +8,22 @@
 
 body {
     background-color: #333;
+    color:cornsilk;
 }
 
-a {
+/* a {
   color: #333;
   background-color: rgb(110, 104, 104);
   padding: 1em;
   text-decoration: none;
   text-transform: uppercase;
+}*/
+a:link{
+  color: #ffffff
+}
+
+a:visited{
+  color: #ffbf80;
 }
 
 p{
@@ -46,7 +54,6 @@ h2{
     border-radius: 4px;
     width:100%;
    }
-
  
 
 /* Navigation part*/
@@ -56,13 +63,7 @@ header > nav {
     display: inline-flexbox;
     font-size: 20px; 
     }
-
-header nav ul li {
-  display: inline-block;
-  margin-left: 20px;
-
  
-}
    /* Drop down menu*/
 
     /* Dropdown Button */
@@ -115,6 +116,10 @@ header nav ul li {
         /*end drop down menu code*/
 
 
+.content-wrapper{
+max-width: 90%;
+}
+
 /* Main logo on the screen when it loads*/
 .logo {
     margin-bottom: 25px;
@@ -123,54 +128,51 @@ header nav ul li {
 }
 
 
-/*This section deals with the About Me Section*/
+/*This section deals with the About Me Section --  HOW CAN I GET THE IMAGE TO WRAP?*/
 .about-me{
     margin-bottom: 25px;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
 }
 .float-left{
 float:left;
 margin: 10em;
 }
     
-/* HOW DO I WRAP THE TEXT TO THE IMAGE? Inline-block isn't working? Why*/
-
-
+/* This section is for Work. Work is currently under consturction images because there isn't anything to put there yet. It will be filled with projects as the class goes by.*/
 .work {
     display: inline-block;
     }
   
-  }
-  .row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 33.33%;
-    
-  }
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.column caption {
+  font-weight: bolder;
+}
 
-/*per the directions when hovered on the image should enlarge...IT ISN'T WORKING IT'S STILL GOING BACK TO NONE*/
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+     
+
+/*per the Acceptance Criteria when hovered on the image should enlarge.*/
 .work img:hover{
   transform: scale(1.5);
-   ;
-
-}
-.work > project { /*Captions below the under construction*/
-  color: black;
-  margin-left: 33.3%;
-  background-color: rgb(255, 208, 0);
-  font-family: sans-serif;
-  font-weight: bold;
-  padding: 1em;
-  text-align: center;
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
 }
 
-/* Contact information fill in boxes */
+
+
+/* Contact information fill in form to send contact information This is what I originally wanted to do but didn't know if it was in the scope of the Acceptance requirements. 
 .contact{
   padding: 5em;
   display: flex;
@@ -184,34 +186,33 @@ input[type=text], select, textarea {
     width: 100%; 
     padding: 12px; 
     border: 1px solid #ccc; 
-    border-radius: 4px; /* Rounded borders */
+    border-radius: 4px; /* Rounded borders 
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical 
   }
   
-
   input[type=submit] {
     background-color: #333;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
-   
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
+  When moving the mouse over the submit button, add a darker green color 
   input[type=submit]:hover {
     background-color: rgb(107, 105, 105);
   }
-  
-  
-  .container {
-    border-radius: 5px;
-    background-color: black;
-    padding: 20px;
-  }
+  */
+
+.contact ul{
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+}
 
 footer {
     padding: 30px;
