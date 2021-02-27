@@ -27,7 +27,7 @@
             </div>
     </header>
 
-    <!--JR Logo-->
+    <!--JR Main Logo-->
     <div id="logo" class="logo">
         <div class="logo">
             <img img src=".\images\w_logo.png" alt="Big JR Logo" width="100%" height="90%">
@@ -35,80 +35,97 @@
     </div>
 
     <!-- Main Content-->
-    <div id="about-me" class="about-me">
-        <h2>About Me</h2>
-        <br>
-        <h3>
-            <center>Jeanne R.</center>
-        </h3>
-        <br>
-
-        <img src="./images/personal-photo.jpg" alt="personal photo" class="float-left" style="width:20%">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Semper eget duis at tellus. Facilisis gravida neque convallis a cras semper auctor
-            neque. Elementum sagittis vitae et leo duis ut diam quam nulla. Non diam phasellus vestibulum lorem sed.
-            Eu non diam phasellus vestibulum lorem. Enim praesent elementum facilisis leo vel fringilla est.
-            Pellentesque habitant morbi tristique senectus. Odio eu feugiat pretium nibh. A erat nam at lectus urna
-            duis. At tempor commodo ullamcorper a lacus vestibulum. Adipiscing elit ut aliquam purus sit. Eget duis
-            at tellus at. In ante metus dictum at tempor commodo ullamcorper. Nibh tellus molestie nunc non blandit.
-            Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Cras tincidunt lobortis feugiat
-            vivamus at augue eget arcu dictum. Adipiscing tristique risus nec feugiat in fermentum posuere. Cursus
-            risus at ultrices mi. Nisi quis eleifend quam adipiscing vitae.
-        </p>
-    </div>
-
-    <div id="work" class="work">
-        <h2 style="line-height: 1.5em">Work</h2>
-        <p>
-            <center>
-                Projects and Work are assigned from the John Hopkins University Full Stack Coding Bootcamp.
-        </p>
-        </center>
-        <br>
-        <div class="row">
-            <div class="column">
-                <img src="https://cdn.pixabay.com/photo/2017/06/16/07/26/sign-2408065_960_720.png" alt="project-img"
-                    style="width:100%">
-                <project>Project 1 </project>
+    <main class="content-wrapper">
+        <section>
+            <!-- About Me Section-->
+            <h2>About Me</h2>
+            <div class="about-me">
+                <h3>
+                    <center>Jeanne R.</center>
+                </h3>
+                <br>
+                <img src="./images/personal-photo.jpg" alt="personal photo" class="float-left" style="width:20%">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Semper eget duis at tellus. Facilisis gravida neque convallis a cras semper
+                    auctor
+                    neque. Elementum sagittis vitae et leo duis ut diam quam nulla. Non diam phasellus vestibulum lorem
+                    sed.
+                    Eu non diam phasellus vestibulum lorem. Enim praesent elementum facilisis leo vel fringilla est.
+                    Pellentesque habitant morbi tristique senectus. Odio eu feugiat pretium nibh. A erat nam at lectus
+                    urna
+                    duis. At tempor commodo ullamcorper a lacus vestibulum. Adipiscing elit ut aliquam purus sit. Eget
+                    duis
+                    at tellus at. In ante metus dictum at tempor commodo ullamcorper. Nibh tellus molestie nunc non
+                    blandit.
+                    Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Cras tincidunt lobortis feugiat
+                    vivamus at augue eget arcu dictum. Adipiscing tristique risus nec feugiat in fermentum posuere.
+                    Cursus
+                    risus at ultrices mi. Nisi quis eleifend quam adipiscing vitae.
+                </p>
             </div>
-            <div class="column">
-                <img src="https://cdn.pixabay.com/photo/2017/06/16/07/26/sign-2408065_960_720.png" alt="project-img"
-                    style="width:100%">
-                <project>Project 2 </project>
-            </div>
-            <div class="column">
-                <img src="https://cdn.pixabay.com/photo/2017/06/16/07/26/sign-2408065_960_720.png" alt="project-img"
-                    style="width:100%">
-                <project>Project 3 </project>
-            </div>
-            </p>
-        </div>
-    </div>
+        </section>
 
+        <section>
+            <!-- Work Section -->
+            <h2 style="line-height: 1.5em">Work</h2>
+            <div id="work" class="work">
 
-    <div id="contact" class="contact">
-        <form action="action_page.php">
+                <p>
+                    <center>
+                        Projects and Work are assigned from the John Hopkins University Full Stack Coding Bootcamp.
+                </p>
+                </center>
+                <br>
+                <div class="row">
+                    <div class="column">
+                        <img src="https://cdn.pixabay.com/photo/2017/06/16/07/26/sign-2408065_960_720.png"
+                            alt="project-one" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="https://cdn.pixabay.com/photo/2017/06/16/07/26/sign-2408065_960_720.png"
+                            alt="project-two" style="width:100%">
+                        >
+                    </div>
+                    <div class="column">
+                        <img src="https://cdn.pixabay.com/photo/2017/06/16/07/26/sign-2408065_960_720.png"
+                            alt="project-three" style="width:100%">
+
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- Contact Section -->
             <h2>Contact</h2>
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name...">
-            <p>
-                <label for="lname">E-Mail</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your email...">
-            </p>
-            <p>
-                <label for="subject"></label>Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            </p>
+            <div id="contact" class="contact">
+                <form action="action_page.php">
 
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                    <p>
+                        <label for="lname">E-Mail</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your email...">
+                    </p>
+                    <p>
+                        <label for="subject"></label>Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+                    </p>
 
-    <footer>
-        &copy; jdroyko
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
 
-    </footer>
+        <footer>
+            &copy; jroyko
+
+        </footer>
+    </main>
 </body>
 
 </html>

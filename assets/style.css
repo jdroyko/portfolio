@@ -115,6 +115,10 @@ header nav ul li {
         /*end drop down menu code*/
 
 
+.content-wrapper{
+max-width: 90%;
+}
+
 /* Main logo on the screen when it loads*/
 .logo {
     margin-bottom: 25px;
@@ -123,19 +127,21 @@ header nav ul li {
 }
 
 
-/*This section deals with the About Me Section*/
+/*This section deals with the About Me Section --  HOW CAN I GET THE IMAGE TO WRAP?*/
 .about-me{
     margin-bottom: 25px;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+
 }
 .float-left{
 float:left;
 margin: 10em;
 }
     
-/* HOW DO I WRAP THE TEXT TO THE IMAGE? Inline-block isn't working? Why*/
-
-
+/* This section is for Work. Work is currently under consturction images because there isn't anything to put there yet. It will be filled with projects as the class goes by. */
 .work {
     display: inline-block;
     }
@@ -150,13 +156,13 @@ margin: 10em;
     
   }
 
-/*per the directions when hovered on the image should enlarge...IT ISN'T WORKING IT'S STILL GOING BACK TO NONE*/
+/*per the directions when hovered on the image should enlarge.*/
 .work img:hover{
   transform: scale(1.5);
    ;
 
 }
-.work > project { /*Captions below the under construction*/
+/* .work > project { /*Captions below the under construction
   color: black;
   margin-left: 33.3%;
   background-color: rgb(255, 208, 0);
@@ -168,6 +174,7 @@ margin: 10em;
   border-style: solid;
   border-width: 1px;
   border-color: black;
+  */
 }
 
 /* Contact information fill in boxes */
