@@ -26,10 +26,9 @@ a:visited{
   color: #ffbf80;
 }
 
-p{
-  padding-top: 3em;
-  width: 90%;
-}
+/* p{
+  padding-top: 1em;
+  } */
 
 /* header with fixed position*/
 header {
@@ -57,16 +56,37 @@ h2{
  
 
 /* Navigation part*/
-header > nav {
-    margin-left: 70%;
-    margin-top: -4px;
+
+
+header nav {
+    margin-left: 30%;
+    margin-top: 20px;
+    display: inline-block;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px; 
+    position: absolute;
+}
+
+header nav ul {
+    list-style-type: none;
+    top: -30%;
+   
+}
+
+/*makes them side by side in columns*/
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+/* header > nav {
     display: inline-flexbox;
     font-size: 20px; 
-    }
+    } */
  
-   /* Drop down menu*/
+   /* Drop down menu
 
-    /* Dropdown Button */
+    /* Dropdown Button
     .dropbtn {
      background-color: #ffffff;
      color: black;
@@ -78,13 +98,13 @@ header > nav {
      border-radius: 6px;
      }
 
-     /* the drop down menu code is derived from W3 Schools*/
+     /* the drop down menu code is derived from W3 Schools
      .dropdown {
      position: relative;
      display: inline;
      }
 
-        /* Dropdown Content (Hidden by Default) */
+        /* Dropdown Content (Hidden by Default) 
         .dropdown-content {
           display: none;
           position: absolute;
@@ -96,7 +116,7 @@ header > nav {
           border-radius: 6px;
         }
 
-        /* Links inside the dropdown */
+        /* Links inside the dropdown 
         .dropdown-content a {
           color: black;
           padding: 12px 16px;
@@ -104,20 +124,20 @@ header > nav {
           display: block;
         }
 
-        /* Changes the color of dropdown links on hover */
+        /* Changes the color of dropdown links on hover 
         .dropdown-content a:hover {background-color: #ddd;}
 
-        /* Show the dropdown menu on hover */
+        /* Show the dropdown menu on hover 
         .dropdown:hover .dropdown-content {display: block;}
 
-        /* Change the background color of the dropdown button when the dropdown content is shown */
+        /* Change the background color of the dropdown button when the dropdown content is shown 
         .dropdown:hover .dropbtn {background-color: #333;}
           
-        /*end drop down menu code*/
+        /*end drop down menu code */
 
 
 .content-wrapper{
-max-width: 90%;
+width: 95%;
 }
 
 /* Main logo on the screen when it loads*/
@@ -128,20 +148,41 @@ max-width: 90%;
 }
 
 
-/*This section deals with the About Me Section --  HOW CAN I GET THE IMAGE TO WRAP TO THE TEXT?*/
+/*This section deals with the About Me Section */
 .about-me{
     margin-bottom: 25px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-
+    /* justify-content: space-between; */
 }
-.float-left{
-float:left;
-margin: 10em;
+
+.about-me h3{
+  margin:auto;
+  padding: 1em;
+  font-size: 26pt;
+  font-family: monospace;
 }
-    
+
+.about-me > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.img-desc{
+  display:flex;
+  flex-direction: row;
+  width: 40%;
+  }
+  
+ .about-desc{
+   width: 58%;
+   display:flex;
+   flex-direction: row;
+ } 
+
 /* This section is for Work. Work is currently under consturction images because there isn't anything to put there yet. It will be filled with projects as the class goes by.*/
 .work {
     display: inline-block;
@@ -169,43 +210,6 @@ margin: 10em;
 .work img:hover{
   transform: scale(1.5);
 }
-
-
-
-/* Contact information fill in form to send contact information This is what I originally wanted to do but didn't know if it was in the scope of the Acceptance requirements. 
-.contact{
-  padding: 5em;
-  display: flex;
-    flex: auto;
-    width: 33.3%;
-    margin-left: 33.3%;
-    cursor: crosshair;
-}
-
-input[type=text], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; /* Rounded borders 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
-  }
-  
-  input[type=submit] {
-    background-color: #333;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-  }
-  
-  When moving the mouse over the submit button, add a darker green color 
-  input[type=submit]:hover {
-    background-color: rgb(107, 105, 105);
-  }
-  */
 
 .contact ul{
   font-size: 25px;
@@ -235,8 +239,8 @@ footer h2 {
     }  }
     @media screen and (max-width: 768px) { /*responsive nav bar...that's not really working... how to make the nav bar appear when it's on mobile mode*/
       .nav {
-        float: none;
-        display: block;
+        display: flex;
+        flex: auto;
       }
           
     }
