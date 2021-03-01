@@ -40,7 +40,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Welcome Screen
 
-![](./images/home-screen.png)
+![](./images/Home-screen.PNG)
 
 Acceptance Criteria expanded:
 
