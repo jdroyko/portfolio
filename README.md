@@ -10,6 +10,10 @@ Then I drafted a Mock Up of how I want my page to look like.
 
 ![](C:\Users\c15jd\Desktop\bootcamp\homework\homework2\images\mockup-aboutme.png)
 
+
+
+Originally I wanted to use a hamburger style Nav drop down menu but decided it was not as stated in the Acceptance Criteria. 
+
 ### User Story
 
 *AS AN employer
@@ -36,13 +40,11 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 Acceptance Criteria expanded:
 
-- Navigation bar on the right hand side
+![](C:\Users\c15jd\AppData\Roaming\marktext\images\2021-03-01-17-29-47-image.png)
 
-![](.\images\Home-screen.PNG)
+he work section states under consturction because there are currently no applications that are avaible to browse through. This will be updated as projects come along and applications are launched.  
 
-- The work section states under consturction because there are currently no applications that are avaible to browse through. This will be updated as projects come along and applications are launched.  
-  
-  - per the Acceptance Criteria the Under Construction portions are scaled 1.5 when they are hovered upon. 
+- - per the Acceptance Criteria the Under Construction portions are scaled 1.5 when they are hovered upon. 
   
   - WHEN clicked, they lead to a blank page.
 
