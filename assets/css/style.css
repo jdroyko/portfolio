@@ -142,7 +142,8 @@ width: 95%;
 }
      
 
-/*per the Acceptance Criteria when hovered on the image should enlarge.*/
+/* Acceptance Criteria: WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others */
 .work img:hover{
   transform: scale(1.5);
 }
@@ -171,7 +172,9 @@ footer h3 {
 }
 
 
-   /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design*/
+
+/* Acceptance Criteria: WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport */
   @media screen and (min-width: 768px) {
      on tablets, set columns to only be 50% of the width and not grow 
     .work {
