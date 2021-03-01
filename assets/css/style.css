@@ -128,7 +128,7 @@ max-width: 90%;
 }
 
 
-/*This section deals with the About Me Section --  HOW CAN I GET THE IMAGE TO WRAP?*/
+/*This section deals with the About Me Section --  HOW CAN I GET THE IMAGE TO WRAP TO THE TEXT?*/
 .about-me{
     margin-bottom: 25px;
     display: flex;
@@ -231,26 +231,15 @@ footer h2 {
      on tablets, set columns to only be 50% of the width and not grow 
     .work {
       flex: 0 0 50%;
-      max-width: 50%;
-    }
-  
-    @media screen and (min-width: 500px) { /*responsive nav bar...that's not really working*/
-      .nav a {
+      max-width: 50%;    
+    }  }
+    @media screen and (max-width: 768px) { /*responsive nav bar...that's not really working... how to make the nav bar appear when it's on mobile mode*/
+      .nav {
         float: none;
         display: block;
       }
+          
     }
-  }
+    
+
   
-  /* media query for larger screens
-  @media screen and (min-width: 992px) {
-    header {
-      width: 75%;
-    }
-  
-    .card-column {
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
-    }
-*/
-  }
