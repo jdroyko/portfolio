@@ -11,13 +11,7 @@ body {
     color:cornsilk;
 }
 
-/* a {
-  color: #333;
-  background-color: rgb(110, 104, 104);
-  padding: 1em;
-  text-decoration: none;
-  text-transform: uppercase;
-}*/
+
 a:link{
   color: #ffffff
 }
@@ -26,9 +20,6 @@ a:visited{
   color: #ffbf80;
 }
 
-/* p{
-  padding-top: 1em;
-  } */
 
 /* header with fixed position*/
 header {
@@ -130,6 +121,9 @@ width: 95%;
     display: inline-block;
     }
   
+.work p{
+  padding: 1em;
+}
  /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
@@ -160,6 +154,11 @@ width: 95%;
   font-weight: bolder;
 }
 
+.contact p{
+  padding: 1em;
+}
+
+/* Footer section of the style */
 footer {
     padding: 30px;
     clear: both;
@@ -167,7 +166,7 @@ footer {
     text-align: center;
 }
 
-footer h2 {
+footer h3 {
     font-size: 20px;
 }
 
