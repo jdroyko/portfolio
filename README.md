@@ -10,7 +10,7 @@ Then I drafted a Mock Up of how I want my page to look like.
 
 #### Mock Up Sample
 
-![](.\images\mockup-aboutme.png)
+![](./image/mockup-aboutme.png)
 
 Originally I wanted to use a hamburger style Nav drop down menu but decided it was not as stated in the Acceptance Criteria and after discussion with my tutor, Kris Renaldi, the work in order to get that done required more knowledge. The hamburger drop down bar will be something I work towards on the next iteration of the portfolio.
 
@@ -40,7 +40,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Welcome Screen
 
-![](C:\Users\c15jd\AppData\Roaming\marktext\images\2021-03-01-17-44-28-image.png)
+![](.images/home-screen.png)
 
 Acceptance Criteria expanded:
 
@@ -52,12 +52,12 @@ The work section states under consturction because there are currently no applic
   
   - WHEN clicked, they lead to a blank page, these pages will be filled with applications when applications are available.
 
-- ![](.\images\work-section.PNG)
+- ![](./images/work-section.PNG)
 
 ## Credits
 
-Used W3schools as a reference guide for CSS styling codes
+- Used W3schools as a reference guide for CSS styling codes
 
-Drop down button coding got from W3 schools
+- Drop down button coding got from W3 schools
 
-Received tutoring from Kris Renaldi on 1 Mar 21
+- Received tutoring from Kris Renaldi on 1 Mar 21
