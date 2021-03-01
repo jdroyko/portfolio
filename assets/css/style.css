@@ -182,7 +182,7 @@ THEN I am presented with a responsive layout that adapts to my viewport */
       max-width: 50%;    
     }  
   }
-    @media screen and (max-width: 768px) { /*responsive nav bar...that's not really working... how to make the nav bar appear when it's on mobile mode*/
+    @media screen and (max-width: 768px) { 
       .nav {
         display: flex;
         flex: auto;
