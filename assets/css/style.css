@@ -180,7 +180,8 @@ THEN I am presented with a responsive layout that adapts to my viewport */
     .work {
       flex: 0 0 50%;
       max-width: 50%;    
-    }  }
+    }  
+  }
     @media screen and (max-width: 768px) { /*responsive nav bar...that's not really working... how to make the nav bar appear when it's on mobile mode*/
       .nav {
         display: flex;

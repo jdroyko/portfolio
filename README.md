@@ -10,7 +10,7 @@ Then I drafted a Mock Up of how I want my page to look like.
 
 #### Mock Up Sample
 
-![](./image/mockup-aboutme.png)
+![](./images/mockup-aboutme.png)
 
 Originally I wanted to use a hamburger style Nav drop down menu but decided it was not as stated in the Acceptance Criteria and after discussion with my tutor, Kris Renaldi, the work in order to get that done required more knowledge. The hamburger drop down bar will be something I work towards on the next iteration of the portfolio.
 
@@ -40,7 +40,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Welcome Screen
 
-![](.images/home-screen.png)
+![](./images/home-screen.png)
 
 Acceptance Criteria expanded:
 
